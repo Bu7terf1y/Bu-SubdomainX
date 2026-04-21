@@ -4,6 +4,34 @@
 
 Bu-SubdomainX 是一个高效的子域名枚举工具，支持多线程扫描和自定义字典，用于渗透测试和安全评估。
 
+## 下载使用
+
+### 方式一：直接下载可执行文件（推荐）
+
+无需安装 Python 环境，直接下载即可使用。
+
+1. 前往 [Releases 页面](https://github.com/Bu7terf1y/Bu-SubdomainX/releases) 下载最新版本
+2. 下载 `Bu-SubdomainX.exe`
+3. 解压后双击运行即可
+
+### 方式二：源码运行
+
+适用于需要自定义修改或有 Python 环境的用户。
+
+#### 安装依赖
+
+在项目目录下运行：
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 运行程序
+
+```bash
+python Bu-SubdomainX.py
+```
+
 ## 功能特点
 
 - ✅ 多线程扫描，提高枚举速度
@@ -13,27 +41,21 @@ Bu-SubdomainX 是一个高效的子域名枚举工具，支持多线程扫描和
 - ✅ 结果保存为CSV文件，方便后续分析
 - ✅ 彩色终端输出，提升用户体验
 
-## 安装依赖
-
-在项目目录下运行：
-
-```bash
-pip install -r requirements.txt
-```
-
 ## 使用方法
 
-1. 运行 `Bu-SubdomainX.py`
-2. 程序会自动检查Dict目录和字典文件
+1. 运行程序（exe 或 python 脚本）
+2. 程序会自动检查 Dict 目录和字典文件
 3. 选择菜单选项：
    - `1. 输入域名并开始枚举`：输入主域名后立即开始枚举
    - `2. 设置线程`：自定义扫描线程数（默认10）
-   - `3. 设置字典文件`：选择Dict目录下的字典文件
+   - `3. 设置字典文件`：选择 Dict 目录下的字典文件
    - `4. 退出`：退出程序
 
 ### 示例
 
 ```bash
+$ Bu-SubdomainX.exe
+# 或
 $ python Bu-SubdomainX.py
 
 # 输入域名并开始枚举
@@ -61,6 +83,17 @@ $ python Bu-SubdomainX.py
 CSV文件包含以下字段：
 - 子域名
 - 状态码
+
+## 打包说明
+
+如需自行打包为可执行文件，可使用 PyInstaller：
+
+```bash
+pip install pyinstaller
+pyinstaller -F -w -i logo.ico Bu-SubdomainX.py
+```
+
+打包后的文件位于 `dist` 目录下。
 
 ## 注意事项
 
