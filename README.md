@@ -1,6 +1,6 @@
 # Bu-SubdomainX - 子域名枚举工具
 
-![Bu-SubdomainX](https://via.placeholder.com/800x200?text=Bu-SubdomainX+Subdomain+Enumerator)
+<img width="735" height="262" alt="image" src="https://github.com/user-attachments/assets/7e9fae12-a3c6-4249-a53d-29d99f079370" />
 
 Bu-SubdomainX 是一个高效的子域名枚举工具，支持多线程扫描和自定义字典，用于渗透测试和安全评估。
 
