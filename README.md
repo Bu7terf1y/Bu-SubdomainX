@@ -11,8 +11,8 @@ Bu-SubdomainX 是一个高效的子域名枚举工具，支持多线程扫描和
 无需安装 Python 环境，直接下载即可使用。
 
 1. 前往 [Releases 页面](https://github.com/Bu7terf1y/Bu-SubdomainX/releases) 下载最新版本
-2. 下载 `Bu-SubdomainX.exe`
-3. 解压后双击运行即可
+2. 下载 `Bu-SubdomainX-v1.0.0.zip`
+3. **解压后**双击 `Bu-SubdomainX.exe` 即可运行
 
 ### 方式二：源码运行
 
